@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+}
+
+.dino {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  background-image: url('./img/dino.png');
+}
+
+.cactus {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  background-image: url('./img/cactus.png');
+}
+
+.game-over {
+  text-align: center;
+  color: #666666;
+  margin-top: 5rem;
+  font-family: 'Prompt', sans-serif;
+  font-size: 3rem;
+}
+
+.background {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-image: url('./img/background.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s linear infinite;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+} ;
